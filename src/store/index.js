@@ -1,6 +1,8 @@
 import Vuex from 'vuex'
+import storeAPI from "../plugins/storeAPI";
 
 const store = new Vuex.Store({
+    plugins: [storeAPI],
     state: {
         count: 0,
     },
