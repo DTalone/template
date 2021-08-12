@@ -7,16 +7,22 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "vue": "^3.2.1",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.15.0",
     "@vitejs/plugin-vue": "^1.4.0",
     "@vue/compiler-sfc": "^3.2.1",
     "autoprefixer": "^10.3.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.16.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
