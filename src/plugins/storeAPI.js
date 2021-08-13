@@ -1,4 +1,4 @@
-import { $api } from "../services/index.js";
+import { $api } from "@/services/index.js";
 
 export default function(store) {
   try {
