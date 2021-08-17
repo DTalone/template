@@ -2,16 +2,20 @@ module.exports = {
     root: true,
     env: {
       browser: true,
+      node: true,
     },
     parserOptions: {
       parser: 'babel-eslint',
       sourceType: 'module',
+      ecmaVersion: 2020,
     },
     extends: [
       'airbnb-base',
       'plugin:vue/vue3-essential',
       'prettier/vue',
-      'plugin:prettier/recommended'
+      "eslint:recommended",
+      'plugin:prettier/recommended',
+      "@vue/prettier"
     ],
     rules: {
       'comma-dangle': 'off',
@@ -23,6 +27,8 @@ module.exports = {
       "vue/component-name-in-template-casing": ["error", "kebab-case", {
         "ignores": []
       }],
-      'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'auto' }]
+      'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'auto' }],
+      "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+      "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     },
   };
